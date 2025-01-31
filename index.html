@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+    <a href="view/login.html">Connexion</a>
+    <fieldset>
+        <legend>Gestion de profil</legend>
+        <form action="controller/userController.php?action=insert" method="POST">
+            <input type="radio" name="etat" value="0">Visible pour tous
+            <input type="radio" name="etat" value="1">Visible pour les amis
+            <input type="radio" name="etat" value="2">Invisible
+
+    </fieldset>
+    <fieldset>
+        <legend>Vos coordonnees</legend>
+
+        <div class="element">
+            <label for="pseudo">Pseudo</label>
+            <br>
+            <label for="site web">Site web</label>
+            <br>
+            <label for="tel">Telephone</label>
+            <br>
+
+            <label for="mail">E-mail</label>
+            <br>
+            <label for="mtdepasse">Mot de passe</label>
+            <br>
+            <label for="date">Date de naissance</label>
+            <br>
+            <label for="pres">Presentation</label>
+        </div>
+        <div class="forme">
+            <input type="text" id="pseudo" name="nom" placeholder="Vos nom et prenom">
+            <br>
+            <input type="text" id="site web" name="site" placeholder="adresse de votre site web">
+            <br>
+            <input type="tel" id="tel" name="tele" placeholder="Vote numero de telephone">
+            <br>
+            <input type="email" id="mail" name="ail" placeholder="Votre adresse mail">
+            <br>
+            <input type="password" id="mtdepasse" name="pass" placeholder="m2p">
+            <br>
+            <input type="date" id="date" name="jour">
+            <br>
+            <textarea name="text" rows="6" cols="40" id="pres"></textarea>
+        </div>
+        <section>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Reintialiser">
+
+        </section>
+
+
+
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+fieldset{
+    width:500px;
+    margin:auto;
+    border-style: dotted;
+    border-color: blue;
+}
+.element{
+    float: left;
+    width: 130px;
+    margin-bottom: 105px;
+
+
+}
+.forme{
+    float: right;
+   margin-bottom: 30px;
+
+}
+section{
+    display: table;
+    
+}
+.element label {
+    display: block; /* Assurez-vous que le label est affiché en tant que bloc pour que la marge fonctionne correctement */
+}
+.forme input{
+    display: block;
+}
+@font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+         font-weight:normal;
+         font-style: normal;
+}
+body{
+    font-family: 'Dayrom';
+}
